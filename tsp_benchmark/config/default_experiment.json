@@ -1,0 +1,38 @@
+{
+  "label": "full_benchmark",
+  "data_dir": "data/tsp",
+  "algorithms": [
+    {
+      "name": "FunSearch",
+      "path": "algorithms/construct/funsearch.py"
+    },
+    {
+      "name": "EoH",
+      "path": "algorithms/construct/eoh.py"
+    },
+    {
+      "name": "ReEvo",
+      "path": "algorithms/construct/reevo.py"
+    },
+    {
+      "name": "EoHS",
+      "path": "algorithms/construct/eohs.py"
+    },
+    {
+      "name": "PartEvo",
+      "path": "algorithms/construct/partevo.py"
+    },
+    {
+      "name": "EOHU",
+      "path": "algorithms/eohu.py"
+    },
+    {
+      "name": "StructEvo",
+      "path": "algorithms/struct_evo.py"
+    }
+  ],
+  "num_runs": 30,
+  "processes": 20,
+  "alpha": 0.05,
+  "baseline_algorithm": "StructEvo"
+}

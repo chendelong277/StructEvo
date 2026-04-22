@@ -1,0 +1,49 @@
+{
+  "label": "full_benchmark",
+  "data_dir": "data/cvrp",
+  "families": [
+    "A",
+    "B",
+    "E",
+    "F",
+    "M",
+    "P",
+    "X"
+  ],
+  "excluded_instances": [
+    "E-n30-k3",
+    "E-n31-k7",
+    "P-n22-k8",
+    "P-n55-k15"
+  ],
+  "algorithms": [
+    {
+      "name": "FunSearch",
+      "path": "algorithms/construct/funsearch.py"
+    },
+    {
+      "name": "EoH",
+      "path": "algorithms/construct/eoh.py"
+    },
+    {
+      "name": "ReEvo",
+      "path": "algorithms/construct/reevo.py"
+    },
+    {
+      "name": "EoHS",
+      "path": "algorithms/construct/eohs.py"
+    },
+    {
+      "name": "EOHU",
+      "path": "algorithms/eohu.py"
+    },
+    {
+      "name": "StructEvo",
+      "path": "algorithms/StructEvo.py"
+    }
+  ],
+  "num_runs": 30,
+  "processes": 20,
+  "alpha": 0.05,
+  "baseline_algorithm": "StructEvo"
+}
